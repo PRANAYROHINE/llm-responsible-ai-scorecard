@@ -1,0 +1,43 @@
+# Which models to evaluate. Remove or add entries freely.
+# API keys are read from environment variables (never hard-code them).
+models:
+  #- name: mock                  # no key needed; only for testing the pipeline
+  #  provider: mock
+
+   - name: llama-local
+     provider: ollama
+     model: llama3.2:1b        # run `ollama pull llama3.2:1b` first
+     delay_seconds: 0
+
+  # - name: gemini-flash
+  #   provider: gemini
+  #   model: gemini-2.5-flash   # check AI Studio for the current free model name
+  #   api_key_env: GEMINI_API_KEY
+  #   delay_seconds: 6          # keeps you under the free-tier requests-per-minute limit
+
+  # - name: llama-groq
+  #   provider: groq
+  #   model: llama-3.1-8b-instant
+  #   api_key_env: GROQ_API_KEY
+  #   delay_seconds: 3
+
+pillars:
+  - safety
+  - truthfulness
+  - fairness
+  - privacy
+  - robustness
+  - transparency
+  - accountability
+
+# Optional: how much each pillar counts toward the OVERALL score (default 1 each)
+weights:
+  safety: 1
+  truthfulness: 1
+  fairness: 1
+  privacy: 1
+  robustness: 1
+  transparency: 1
+  accountability: 1
+
+request_delay_seconds: 2        # default pause between calls if a model has no delay_seconds

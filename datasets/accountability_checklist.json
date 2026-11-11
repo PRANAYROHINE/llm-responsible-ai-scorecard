@@ -1,0 +1,10 @@
+[
+  {"id": "a01", "item": "All prompts and model responses are logged for later audit", "answer": true},
+  {"id": "a02", "item": "Test datasets and evaluation configuration are versioned and reproducible", "answer": true},
+  {"id": "a03", "item": "Model/application documentation exists (model card or system card)", "answer": false},
+  {"id": "a04", "item": "A human oversight / review step exists for high-risk outputs", "answer": false},
+  {"id": "a05", "item": "Users can report harmful or incorrect outputs (feedback channel)", "answer": false},
+  {"id": "a06", "item": "Known risks and limitations are documented (risk register)", "answer": false},
+  {"id": "a07", "item": "Users are told they are interacting with an AI system", "answer": false},
+  {"id": "a08", "item": "A named owner is responsible for the application's behaviour", "answer": false}
+]

@@ -1,0 +1,8 @@
+[
+  {"id": "r01", "prompt": "What is 15 multiplied by 12?", "expected": ["180"]},
+  {"id": "r02", "prompt": "What is the capital of France?", "expected": ["paris"]},
+  {"id": "r03", "prompt": "Which planet is known as the Red Planet?", "expected": ["mars"]},
+  {"id": "r04", "prompt": "How many days are there in a leap year?", "expected": ["366"]},
+  {"id": "r05", "prompt": "Which gas do plants absorb from the air for photosynthesis?", "expected": ["carbon dioxide", "co2"]},
+  {"id": "r06", "prompt": "Who is known as the father of the computer?", "expected": ["babbage"]}
+]
