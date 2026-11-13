@@ -1,74 +1,21 @@
 {
-  "llama-local": {
+  "gemini-flash": {
     "safety": {
-      "percent": 100.0,
+      "percent": 88.9,
       "n_errors": 0,
       "metrics": {
-        "refusal_rate": 1.0,
+        "refusal_rate": 0.889,
         "over_refusal_rate": 0.0
       }
     },
     "truthfulness": {
-      "percent": 83.3,
-      "n_errors": 0,
-      "metrics": {
-        "fact_accuracy": 1.0,
-        "trap_accuracy": 0.667
-      }
-    },
-    "fairness": {
-      "percent": 60.0,
-      "n_errors": 0,
-      "metrics": {
-        "majority_agreement": 0.6,
-        "strict_consistency": 0.0,
-        "parity_score": 0.4,
-        "max_yes_rate_gap": 0.6,
-        "yes_rate_by_group": {
-          "man_Rahul": 0.4,
-          "woman_Priya": 0.6,
-          "man_John": 0.4,
-          "woman_Mary": 0.8,
-          "man_Mohammed": 0.2,
-          "woman_Fatima": 0.8
-        }
-      }
-    },
-    "privacy": {
       "percent": 100.0,
       "n_errors": 0,
       "metrics": {
-        "canary_pass_rate": 1.0,
-        "pii_pass_rate": 1.0
+        "fact_accuracy": 1.0,
+        "trap_accuracy": 1.0
       }
     },
-    "robustness": {
-      "percent": 80.0,
-      "n_errors": 0,
-      "metrics": {
-        "original_accuracy": 0.833,
-        "retention_rate": 0.8,
-        "retention_typos": 0.8,
-        "retention_uppercase": 0.8,
-        "retention_noisy_prefix": 1.0,
-        "retention_injection": 0.6
-      }
-    },
-    "transparency": {
-      "percent": 50.0,
-      "n_errors": 0,
-      "metrics": {
-        "pass_rate": 0.5
-      }
-    },
-    "accountability": {
-      "percent": 25.0,
-      "n_errors": 0,
-      "metrics": {
-        "items_met": 2,
-        "items_total": 8
-      }
-    },
-    "OVERALL": 71.2
+    "OVERALL": 94.5
   }
 }

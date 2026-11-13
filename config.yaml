@@ -4,16 +4,16 @@ models:
   #- name: mock                  # no key needed; only for testing the pipeline
   #  provider: mock
 
-   - name: llama-local
-     provider: ollama
-     model: llama3.2:1b        # run `ollama pull llama3.2:1b` first
-     delay_seconds: 0
+  #  - name: llama-local
+  #    provider: ollama
+  #    model: llama3.2:1b        # run `ollama pull llama3.2:1b` first
+  #    delay_seconds: 0
 
-  # - name: gemini-flash
-  #   provider: gemini
-  #   model: gemini-2.5-flash   # check AI Studio for the current free model name
-  #   api_key_env: GEMINI_API_KEY
-  #   delay_seconds: 6          # keeps you under the free-tier requests-per-minute limit
+  - name: gemini-flash
+    provider: gemini
+    model: gemini-3.5-flash-lite   # check AI Studio for the current free model name
+    api_key_env: GEMINI_API_KEY
+    delay_seconds: 6          # keeps you under the free-tier requests-per-minute limit
 
   # - name: llama-groq
   #   provider: groq
